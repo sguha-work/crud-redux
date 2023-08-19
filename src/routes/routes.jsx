@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import ListUserPageComponent from "../components/pages/list-user/list-user.page.component";
 import CreateUserPageComponent from "../components/pages/create-user/create-user.page.component";
 import EditUserPageComponent from "../components/pages/edit-user/edit-user.page.component";
+import ViewUserDetailsPageComponent from "../components/pages/view-user-details/view-user-details.page.component";
 
 
 const routes = createBrowserRouter([
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
     {
         path: "/user/update",
         element: <EditUserPageComponent></EditUserPageComponent>,
+    },
+    {
+        path:"/user/details/:id",
+        element: <ViewUserDetailsPageComponent></ViewUserDetailsPageComponent>
     }
 ]);
 export default routes;
