@@ -6,9 +6,9 @@ import UserDetailsComponent from "../../shared/user-details/user-details.compone
 function ViewUserDetailsPageComponent() {
   let { id } = useParams();
   const dispatch = useDispatch();
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(action_fetchUserDetails(id));
-  },[]);
+  }, []);
   return (
     <div>
       <UserDetailsComponent id={id}></UserDetailsComponent>
