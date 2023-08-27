@@ -8,7 +8,7 @@ export const action_fetchUsers = createAsyncThunk("fetchUsers", async () => {
     return data;
 });
 export const action_fetchUserDetails = createAsyncThunk("fetchUserDetails", async (id) => {
-    const data = await UserService.fetchUserDetails(id);console.log('data from user',data);
+    const data = await UserService.fetchUserDetails(id);
     return data;
 });
 export const action_updateUsers = createAsyncThunk("updateUser", async (value) => {

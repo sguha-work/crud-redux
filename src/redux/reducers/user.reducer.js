@@ -14,7 +14,6 @@ const userSlice = createSlice({
             state.data = response.payload;
         });
         builder.addCase(action_fetchUserDetails.fulfilled, (state, response) => {
-            console.log('response', response.payload);
             state.details = {
                 [response.payload.id]: response.payload
             };

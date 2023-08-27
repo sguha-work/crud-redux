@@ -19,7 +19,7 @@ const routes = createBrowserRouter([
         element: <CreateUserPageComponent></CreateUserPageComponent>,
     },
     {
-        path: "/user/update",
+        path: "/user/update/:id",
         element: <EditUserPageComponent></EditUserPageComponent>,
     },
     {

@@ -11,7 +11,7 @@ function ListUserTableComponent() {
     setUsers(state.users);
   }, [state.users]);
   const editUser = ((userId) => {
-    alert(userId);
+    navigate(`/user/update/${userId}`);
   });
   const viewUserDetails = ((userId) => {
     navigate(`/user/details/${userId}`)
